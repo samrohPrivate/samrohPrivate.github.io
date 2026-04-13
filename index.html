@@ -15,11 +15,11 @@
             --muted: #7a756c;
             --rule: #2e2b26;
         }
-
+ 
         * { margin: 0; padding: 0; box-sizing: border-box; }
-
+ 
         html { font-size: 18px; }
-
+ 
         body {
             background-color: var(--bg);
             color: var(--ink);
@@ -31,7 +31,7 @@
             padding: 3rem 2rem;
             position: relative;
         }
-
+ 
         body::before {
             content: '';
             position: fixed;
@@ -41,7 +41,7 @@
             pointer-events: none;
             z-index: 0;
         }
-
+ 
         .container {
             max-width: 540px;
             width: 100%;
@@ -50,12 +50,12 @@
             animation: fadeIn 0.8s ease-out;
             text-align: center;
         }
-
+ 
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(8px); }
             to { opacity: 1; transform: translateY(0); }
         }
-
+ 
         .name {
             font-family: 'Archivo', Helvetica, sans-serif;
             font-weight: 600;
@@ -65,7 +65,7 @@
             margin-bottom: 0.5rem;
             color: var(--ink);
         }
-
+ 
         .tagline {
             font-family: 'Archivo', Helvetica, sans-serif;
             font-weight: 300;
@@ -75,7 +75,7 @@
             color: #a9a49b;
             margin-bottom: 2.5rem;
         }
-
+ 
         .rule {
             border: none;
             height: 1px;
@@ -83,7 +83,7 @@
             margin: 0 auto 2rem;
             width: 60%;
         }
-
+ 
         .bio {
             font-size: 1.05rem;
             line-height: 1.85;
@@ -93,19 +93,19 @@
             margin-left: auto;
             margin-right: auto;
         }
-
+ 
         .publication {
             margin-bottom: 2.5rem;
             padding: 1.4rem 1.5rem;
             border-top: 1px solid var(--rule);
             border-bottom: 1px solid var(--rule);
         }
-
+ 
         .publication + .publication {
             margin-top: -2.5rem;
             border-top: none;
         }
-
+ 
         .section-label {
             font-family: 'Archivo', Helvetica, sans-serif;
             font-weight: 500;
@@ -115,25 +115,25 @@
             color: var(--muted);
             margin-bottom: 0.8rem;
         }
-
+ 
         .publication-entry {
             font-size: 1.05rem;
             line-height: 1.7;
             color: var(--ink);
             margin-bottom: 0.6rem;
         }
-
+ 
         .publication-entry:last-child { margin-bottom: 0; }
-
+ 
         .publication-entry .title { color: var(--accent); }
-
+ 
         .links {
             display: flex;
             justify-content: center;
             gap: 1.5rem;
             margin-bottom: 2.5rem;
         }
-
+ 
         .links a {
             font-family: 'Archivo', Helvetica, sans-serif;
             font-weight: 400;
@@ -147,7 +147,7 @@
             transition: all 0.25s ease;
             position: relative;
         }
-
+ 
         .links a::after {
             content: '';
             position: absolute;
@@ -157,18 +157,18 @@
             transition: height 0.25s ease;
             z-index: -1;
         }
-
+ 
         .links a:hover {
             color: var(--bg);
             border-color: var(--accent);
         }
-
+ 
         .links a:hover::after { height: 100%; }
-
+ 
         .contact {
             margin-top: 2.5rem;
         }
-
+ 
         .contact a {
             font-family: 'Archivo', Helvetica, sans-serif;
             font-weight: 300;
@@ -178,9 +178,9 @@
             text-decoration: none;
             transition: color 0.25s ease;
         }
-
+ 
         .contact a:hover { color: var(--ink); }
-
+ 
         @media (max-width: 600px) {
             html { font-size: 16px; }
             .name { font-size: 0.85rem; }
@@ -192,30 +192,25 @@
     <div class="container">
         <h1 class="name">Sammy Rohner</h1>
         <p class="tagline">Writer &amp; Commentator</p>
-
+ 
         <hr class="rule">
-
+ 
         <p class="bio">
             Catholic writer and commentator on culture, moral formation, technology, and the renewal of conservatism in contemporary Europe. M.Sc. student in economics and international relations at Aalto University, Helsinki. Former member of the Swiss Armed Forces.
         </p>
-
+ 
         <div class="links">
             <a href="https://substack.com/@sammyrohner" target="_blank" rel="noopener">Substack</a>
         </div>
-        
-        <!-- ============================================
-             Published Works
-             Copy publication blocks in there
-             ============================================ -->
-
+ 
         <div class="publication">
             <p class="section-label">Published</p>
             <p class="publication-entry">
                 <span class="title">Beyond Rejection: The Moral Task of My Generation</span><br>
-                The European Conservative — Spring 2026
+                The European Conservative — Print, Spring 2026
             </p>
         </div>
-
+ 
         <div class="publication">
             <p class="section-label">Work in Progress</p>
             <p class="publication-entry">
@@ -227,7 +222,7 @@
                 Political Formation in the Age of Podcasts
             </p>
         </div>
-
+ 
         <div class="contact">
             <a href="mailto:contact@sammyrohner.com">contact@sammyrohner.com</a>
         </div>
